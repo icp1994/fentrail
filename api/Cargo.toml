@@ -1,0 +1,23 @@
+[package]
+name = "libft"
+version = "0.1.0"
+authors = ["icp <pangolin@vivaldi.net>"]
+edition = "2021"
+description = "One-to-many mapping from a position to a set of openings"
+repository = "https://github.com/icp1994/fentrail/tree/master/api"
+license = "AGPL-3.0-or-later"
+keywords = ["chess", "lichess"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crossbeam-channel = "0.5.8"
+csv = "1.2.2"
+pgn-reader = "0.25.0"
+rayon = "1.8.0"
+redb = { version = "1.2.0" }
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.107"
+serde_with = "3.3.0"
+shakmaty = "0.26"
+thiserror = "1.0.49"
